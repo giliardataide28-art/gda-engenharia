@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="GDA Engenharia Digital — Projetos elétricos e arquitetônicos BIM em Juiz de Fora, MG. Entrega em 48h. Isométrico 3D por ambiente. Sua obra do jeito certo, na primeira vez." />
-  <meta name="keywords" content="projeto elétrico BIM, engenharia elétrica Juiz de Fora, projeto elétrico NBR 5410, projeto arquitetônico BIM, Revit, BIM elétrico MG, CREA-MG" />
-  <meta name="author" content="Giliard Dourado Ataíde — GDA Engenharia Digital" />
-  <meta property="og:title" content="GDA Engenharia Digital — Sua obra elétrica do jeito certo. Na primeira vez." />
-  <meta property="og:description" content="Projetos arquitetônicos e elétricos BIM com entrega garantida em 48h. Isométrico 3D por ambiente. Juiz de Fora, MG." />
+  <meta name="description" content="GDA Engenharia Digital - Projetos arquitet�nicos e el�tricos em BIM, documenta��o t�cnica e compatibiliza��o para obras em Juiz de Fora, MG, e atendimento remoto." />
+  <meta name="keywords" content="projeto el�trico BIM, engenharia el�trica Juiz de Fora, projeto el�trico NBR 5410, projeto arquitet�nico BIM, Revit, BIM el�trico MG, CREA-MG" />
+  <meta name="author" content="Giliard Dourado Ata�de - GDA Engenharia Digital" />
+  <meta property="og:title" content="GDA Engenharia Digital - Sua obra el�trica do jeito certo. Na primeira vez." />
+  <meta property="og:description" content="Projetos arquitet�nicos e el�tricos em BIM, documenta��o t�cnica e compatibiliza��o para obras." />
   <meta property="og:type" content="website" />
-  <title>GDA Engenharia Digital — Projetos BIM em Juiz de Fora | 48h</title>
+  <title>GDA Engenharia Digital - Projetos BIM em Juiz de Fora</title>
   <canvas id="fav-canvas" width="64" height="64" style="display:none"></canvas>
 
   <!-- Google Fonts -->
@@ -22,9 +22,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
   <style>
-    /* ═══════════════════════════════════════════════
-       VARIÁVEIS — PALETA BRANCO + VERDE (Apple style)
-    ═══════════════════════════════════════════════ */
+    /* �����������������������������������������������
+       VARI�VEIS - PALETA BRANCO + VERDE (Apple style)
+    ����������������������������������������������� */
     :root {
       --green:       #2D6A4F;
       --green-mid:   #40916C;
@@ -65,9 +65,9 @@
     ul  { list-style: none; }
     button { cursor: pointer; border: none; background: none; font-family: inherit; }
 
-    /* ═══════════════════════════════════════════════
-       UTILITÁRIOS
-    ═══════════════════════════════════════════════ */
+    /* �����������������������������������������������
+       UTILIT�RIOS
+    ����������������������������������������������� */
     .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
     .section    { padding: 96px 0; }
     .section-alt { background: var(--bg-white); }
@@ -107,7 +107,7 @@
     .section-header { max-width: 680px; margin: 0 auto 64px; text-align: center; }
     .section-header .section-subtitle { margin: 0 auto; }
 
-    /* BOTÕES */
+    /* BOT�ES */
     .btn {
       display: inline-flex; align-items: center; gap: 10px;
       padding: 14px 28px; border-radius: 980px;
@@ -150,9 +150,9 @@
       background: var(--green-light);
     }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        LOADING SCREEN
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     #loading-screen {
       position: fixed; inset: 0; z-index: 9999;
       background: var(--bg-white);
@@ -176,17 +176,17 @@
     .loading-bar-fill { height: 100%; background: var(--green); border-radius: 99px; width: 0; animation: load-fill 2s ease forwards; }
     @keyframes load-fill { to { width: 100%; } }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        SCROLL PROGRESS
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     #scroll-progress {
       position: fixed; top: 0; left: 0; height: 2px;
       background: var(--green); width: 0; z-index: 9998;
     }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        NAVBAR
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     #navbar {
       position: fixed; top: 0; left: 0; right: 0; z-index: 900;
       padding: 18px 0; transition: var(--transition);
@@ -241,9 +241,9 @@
     .mobile-menu a { font-size: 1.8rem; font-weight: 700; color: var(--txt-1); transition: color .2s; }
     .mobile-menu a:hover { color: var(--green); }
 
-    /* ═══════════════════════════════════════════════
-       HERO — APPLE STYLE
-    ═══════════════════════════════════════════════ */
+    /* �����������������������������������������������
+       HERO - APPLE STYLE
+    ����������������������������������������������� */
     #hero {
       background: var(--bg-white);
       padding: 140px 0 80px;
@@ -308,7 +308,7 @@
     .hero-counter-num .suf { font-size: 1.5rem; color: var(--green); }
     .hero-counter-label { font-size: .78rem; color: var(--txt-3); margin-top: 4px; }
 
-    /* Hero visual — project video */
+    /* Hero visual - project video */
     .hero-visual { position: relative; }
 
     .hero-video-wrap {
@@ -398,9 +398,9 @@
     }
     .hero-float-tag-2 strong { display: block; font-size: 1.4rem; letter-spacing: -.02em; }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        STATS BAR
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     #stats {
       background: var(--green);
       padding: 0;
@@ -417,9 +417,9 @@
     }
     .stat-label { font-size: .78rem; color: rgba(255,255,255,.7); margin-top: 4px; }
 
-    /* ═══════════════════════════════════════════════
-       DORES — "VOCÊ JÁ PASSOU POR ISSO?"
-    ═══════════════════════════════════════════════ */
+    /* �����������������������������������������������
+       DORES - "VOC� J� PASSOU POR ISSO?"
+    ����������������������������������������������� */
     #dores { background: var(--bg); }
 
     .dores-grid {
@@ -484,9 +484,9 @@
       font-weight: 400;
     }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        SOLUTION / PROCESSO
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     #solution { background: var(--bg-white); }
 
     .solution-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
@@ -524,9 +524,9 @@
       border-radius: 980px; font-size: .78rem; font-weight: 600;
     }
 
-    /* ═══════════════════════════════════════════════
-       PRODUTOS — 3 CARDS
-    ═══════════════════════════════════════════════ */
+    /* �����������������������������������������������
+       PRODUTOS - 3 CARDS
+    ����������������������������������������������� */
     #produtos { background: var(--bg); }
 
     .produtos-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
@@ -575,9 +575,9 @@
     .prod-price-val { font-size: 2rem; font-weight: 800; color: var(--green); letter-spacing: -.03em; }
     .prod-price-val .period { font-size: .85rem; font-weight: 400; color: var(--txt-3); }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        PRODUTOS DIGITAIS
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     #digital { background: var(--bg-white); }
 
     .digital-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; max-width: 900px; margin: 0 auto; }
@@ -607,9 +607,9 @@
     .digital-includes li i { color: var(--green); flex-shrink: 0; margin-top: 2px; font-size: .8rem; }
     .digital-price { font-size: 1.8rem; font-weight: 800; color: var(--green); margin-bottom: 20px; letter-spacing: -.02em; }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        DIFERENCIAIS
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     #diferenciais { background: var(--bg); }
 
     .dif-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
@@ -630,9 +630,9 @@
     .dif-card h3 { font-size: 1rem; font-weight: 700; color: var(--txt-1); margin-bottom: 8px; }
     .dif-card p { font-size: .875rem; color: var(--txt-2); line-height: 1.65; }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        CALCULADORA
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     #calculadora { background: var(--bg-white); }
 
     .calc-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
@@ -695,9 +695,9 @@
 
     .calc-disclaimer { font-size: .75rem; color: var(--txt-3); line-height: 1.55; margin-top: 14px; }
 
-    /* ═══════════════════════════════════════════════
-       PORTFÓLIO
-    ═══════════════════════════════════════════════ */
+    /* �����������������������������������������������
+       PORTF�LIO
+    ����������������������������������������������� */
     #portfolio { background: var(--bg); }
 
     .portfolio-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
@@ -748,9 +748,9 @@
     }
     #lightbox-close:hover { opacity: 1; }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        DEPOIMENTOS
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     #depoimentos { background: var(--bg-white); }
 
     .depo-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
@@ -775,9 +775,9 @@
     .depo-name { font-weight: 700; font-size: .875rem; color: var(--txt-1); }
     .depo-role { font-size: .78rem; color: var(--txt-3); }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        PARCERIAS
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     #parcerias { background: var(--green-dark); }
     #parcerias .section-title { color: #fff; }
     #parcerias .section-subtitle { color: rgba(255,255,255,.7); margin: 0 auto; }
@@ -812,9 +812,9 @@
 
     .parcerias-cta { text-align: center; }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        FAQ
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     #faq { background: var(--bg); }
 
     .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
@@ -845,9 +845,9 @@
       color: var(--txt-2); line-height: 1.72;
     }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        CTA FINAL
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     #cta-final {
       background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
       position: relative; overflow: hidden;
@@ -899,9 +899,9 @@
 
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        FOOTER
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     footer {
       background: var(--txt-1);
       color: rgba(255,255,255,.7);
@@ -935,9 +935,9 @@
     .footer-bottom p { font-size: .8rem; }
     .footer-crea { font-size: .8rem; color: rgba(255,255,255,.4); }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        WHATSAPP FLOAT
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     #whatsapp-float {
       position: fixed; bottom: 28px; right: 28px; z-index: 800;
     }
@@ -960,9 +960,9 @@
       50%{box-shadow:0 8px 40px rgba(37,211,102,.65)}
     }
 
-    /* ═══════════════════════════════════════════════
+    /* �����������������������������������������������
        RESPONSIVE
-    ═══════════════════════════════════════════════ */
+    ����������������������������������������������� */
     @media(max-width:1024px){
       .hero-content { grid-template-columns: 1fr; gap: 40px; }
       .hero-visual { order: -1; max-width: 600px; margin: 0 auto; }
@@ -1004,7 +1004,7 @@
 </head>
 <body>
 
-<!-- ══ LOADING ══ -->
+<!-- �� LOADING �� -->
 <div id="loading-screen">
   <div class="loading-logo">GDA<span class="dot">.</span></div>
   <div class="loading-bar-wrap">
@@ -1016,21 +1016,21 @@
   </div>
 </div>
 
-<!-- ══ SCROLL PROGRESS ══ -->
+<!-- �� SCROLL PROGRESS �� -->
 <div id="scroll-progress"></div>
 
-<!-- ══ MOBILE MENU ══ -->
+<!-- �� MOBILE MENU �� -->
 <nav class="mobile-menu" id="mobile-menu">
-  <a href="#hero" onclick="toggleMobile()">Início</a>
+  <a href="#hero" onclick="toggleMobile()">In�cio</a>
   <a href="#dores" onclick="toggleMobile()">O Problema</a>
   <a href="#produtos" onclick="toggleMobile()">Projetos</a>
-  <a href="#calculadora" onclick="toggleMobile()">Calculadora</a>
+  <a href="#projeto-vivo" onclick="toggleMobile()">Projeto Vivo</a>
   <a href="#parcerias" onclick="toggleMobile()">Parceiros</a>
   <a href="#faq" onclick="toggleMobile()">FAQ</a>
-  <a href="https://wa.me/5516997970166?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" onclick="toggleMobile()" style="color:var(--green)">Falar com Engenheiro</a>
+  <a href="https://wa.me/5516997970166?text=Ol�!%20Gostaria%20de%20solicitar%20um%20or�amento." target="_blank" onclick="toggleMobile()" style="color:var(--green)">Falar com Engenheiro</a>
 </nav>
 
-<!-- ══ NAVBAR ══ -->
+<!-- �� NAVBAR �� -->
 <header id="navbar">
   <div class="container">
     <div class="nav-inner">
@@ -1038,12 +1038,11 @@
       <nav class="nav-links">
         <a href="#dores">O Problema</a>
         <a href="#produtos">Projetos</a>
-        <a href="#digital">Ferramentas</a>
-        <a href="#calculadora">Calculadora</a>
+        <a href="#projeto-vivo">Projeto Vivo</a>
         <a href="#parcerias">Parceiros</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a class="btn-nav-cta" href="https://wa.me/5516997970166?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank">
+      <a class="btn-nav-cta" href="https://wa.me/5516997970166?text=Ol�!%20Gostaria%20de%20solicitar%20um%20or�amento." target="_blank">
         <i class="fab fa-whatsapp"></i> Solicitar Projeto
       </a>
       <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMobile()">
@@ -1053,7 +1052,7 @@
   </div>
 </header>
 
-<!-- ══ HERO ══ -->
+<!-- �� HERO �� -->
 <section id="hero">
   <div class="hero-bg-circle hero-bg-circle-1"></div>
   <div class="hero-bg-circle hero-bg-circle-2"></div>
@@ -1062,18 +1061,18 @@
       <div class="hero-left" data-aos="fade-right">
         <div class="hero-badge">
           <span class="dot"></span>
-          Entrega em 48h &nbsp;·&nbsp; Juiz de Fora, MG
+          Projetos BIM &nbsp;�&nbsp; Juiz de Fora, MG
         </div>
         <h1 class="hero-title">
-          Sua obra elétrica<br>do jeito certo.<br><span class="green">Na primeira vez.</span>
+          Sua obra el�trica<br>do jeito certo.<br><span class="green">Na primeira vez.</span>
         </h1>
         <p class="hero-sub">
-          Projetos arquitetônicos e elétricos BIM desenvolvidos com metodologia exclusiva.
-          Isométrico 3D por ambiente, memorial descritivo e cronograma financeiro
-          — tudo pronto antes da obra começar.
+          Projetos arquitet�nicos e el�tricos BIM desenvolvidos com processo t�cnico organizado.
+          Isom�trico 3D por ambiente, memorial descritivo e cronograma financeiro
+          - tudo pronto antes da obra come�ar.
         </p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="https://wa.me/5516997970166?text=Olá!%20Quero%20solicitar%20meu%20projeto%20GDA." target="_blank">
+          <a class="btn btn-primary" href="https://wa.me/5516997970166?text=Ol�!%20Quero%20solicitar%20meu%20projeto%20GDA." target="_blank">
             <i class="fab fa-whatsapp"></i> Solicitar meu projeto
           </a>
           <a class="btn btn-outline" href="#solution">
@@ -1082,16 +1081,16 @@
         </div>
         <div class="hero-counters">
           <div>
-            <div class="hero-counter-num"><span id="cnt-48">48</span><span class="suf">h</span></div>
-            <div class="hero-counter-label">Prazo de entrega</div>
+            <div class="hero-counter-num"><i class="fas fa-cube"></i></div>
+            <div class="hero-counter-label">Modelagem BIM</div>
           </div>
           <div>
-            <div class="hero-counter-num"><span data-target="100" class="cnt">0</span><span class="suf">%</span></div>
-            <div class="hero-counter-label">Projetos sem retrabalho</div>
+            <div class="hero-counter-num"><i class="fas fa-file-alt"></i></div>
+            <div class="hero-counter-label">Documenta��o t�cnica</div>
           </div>
           <div>
-            <div class="hero-counter-num">R$<span class="suf">0</span></div>
-            <div class="hero-counter-label">Surpresas na obra</div>
+            <div class="hero-counter-num"><i class="fas fa-comments"></i></div>
+            <div class="hero-counter-label">Escopo alinhado</div>
           </div>
         </div>
       </div>
@@ -1111,13 +1110,13 @@
           <div class="hero-float-tag">
             <div class="hero-float-icon"><i class="fas fa-cube"></i></div>
             <div class="hero-float-text">
-              <strong>Isométrico 3D</strong>
+              <strong>Isom�trico 3D</strong>
               <span>Por ambiente</span>
             </div>
           </div>
           <div class="hero-float-tag-2">
-            <strong>48h</strong>
-            Entrega garantida
+              <strong>BIM</strong>
+              Visualiza��o t�cnica
           </div>
         </div>
 
@@ -1143,39 +1142,39 @@
   </div>
 </section>
 
-<!-- ══ STATS ══ -->
+<!-- �� STATS �� -->
 <div id="stats">
   <div class="container">
     <div class="stats-grid">
       <div class="stat-item" data-aos="fade-up">
-        <div class="stat-num"><span data-target="47" class="cnt">0</span>+</div>
-        <div class="stat-label">Projetos entregues</div>
+        <div class="stat-num">BIM</div>
+        <div class="stat-label">Modelagem integrada</div>
       </div>
       <div class="stat-item" data-aos="fade-up" data-aos-delay="80">
-        <div class="stat-num">48h</div>
-        <div class="stat-label">Prazo garantido</div>
+        <div class="stat-num">3D</div>
+        <div class="stat-label">Leitura por ambiente</div>
       </div>
       <div class="stat-item" data-aos="fade-up" data-aos-delay="160">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">BIM em Revit</div>
+        <div class="stat-num">PDF</div>
+        <div class="stat-label">Documenta��o para obra</div>
       </div>
       <div class="stat-item" data-aos="fade-up" data-aos-delay="240">
         <div class="stat-num">NBR</div>
-        <div class="stat-label">5410 rigorosa</div>
+        <div class="stat-label">Refer�ncia t�cnica aplic�vel</div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ══ DORES — "VOCÊ JÁ PASSOU POR ISSO?" ══ -->
+<!-- �� DORES - "VOC� J� PASSOU POR ISSO?" �� -->
 <section class="section" id="dores">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
       <div class="eyebrow">O problema real</div>
-      <h2 class="section-title">Você já passou por isso?</h2>
+      <h2 class="section-title">Voc� j� passou por isso?</h2>
       <p class="section-subtitle">
-        Quem já fez uma obra sabe: o que parece simples vira dor de cabeça caro.
-        Reconheça antes que aconteça com você.
+        Quem j� fez uma obra sabe: o que parece simples vira dor de cabe�a caro.
+        Reconhe�a antes que aconte�a com voc�.
       </p>
     </div>
 
@@ -1183,26 +1182,26 @@
       <!-- Dor 1 -->
       <div class="dor-card">
         <div class="dor-icon"><i class="fas fa-undo-alt"></i></div>
-        <h3>Retrabalho elétrico</h3>
+        <h3>Retrabalho el�trico</h3>
         <p class="dor-quote">"Quebrei a parede, o eletricista passou errado, tive que refazer tudo."</p>
-        <div class="dor-cost"><i class="fas fa-exclamation-triangle"></i> Custo médio: R$ 3.000–8.000</div>
-        <p class="dor-resolve"><i class="fas fa-check-circle"></i> Projeto isométrico 3D elimina qualquer dúvida de execução</p>
+        <div class="dor-cost"><i class="fas fa-exclamation-triangle"></i> Impacto: quebra, desperd�cio e atraso</div>
+        <p class="dor-resolve"><i class="fas fa-check-circle"></i> O isom�trico 3D apoia a leitura e o planejamento da execu��o</p>
       </div>
       <!-- Dor 2 -->
       <div class="dor-card">
         <div class="dor-icon"><i class="fas fa-question-circle"></i></div>
-        <h3>Custo imprevisível</h3>
-        <p class="dor-quote">"Fui fazer a obra e o elétrico custou o dobro do que o eletricista falou."</p>
-        <div class="dor-cost"><i class="fas fa-exclamation-triangle"></i> Estouro médio de orçamento: 40–80%</div>
-        <p class="dor-resolve"><i class="fas fa-check-circle"></i> Cronograma financeiro etapa por etapa, antes de começar</p>
+        <h3>Custo imprevis�vel</h3>
+        <p class="dor-quote">"Fui fazer a obra e o el�trico custou o dobro do que o eletricista falou."</p>
+        <div class="dor-cost"><i class="fas fa-exclamation-triangle"></i> Impacto: decis�es sem quantitativos e escopo claro</div>
+        <p class="dor-resolve"><i class="fas fa-check-circle"></i> Cronograma financeiro etapa por etapa, antes de come�ar</p>
       </div>
       <!-- Dor 3 -->
       <div class="dor-card">
         <div class="dor-icon"><i class="fas fa-phone-slash"></i></div>
         <h3>Projeto mal documentado</h3>
         <p class="dor-quote">"Meu eletricista ficava me ligando toda hora perguntando onde colocar as coisas."</p>
-        <div class="dor-cost"><i class="fas fa-exclamation-triangle"></i> Atraso médio na obra: 2–4 semanas</div>
-        <p class="dor-resolve"><i class="fas fa-check-circle"></i> Memorial descritivo completo: zero ambiguidade na execução</p>
+        <div class="dor-cost"><i class="fas fa-exclamation-triangle"></i> Impacto: d�vidas e interrup��es durante a execu��o</div>
+        <p class="dor-resolve"><i class="fas fa-check-circle"></i> Memorial descritivo para orientar a execu��o e registrar o escopo</p>
       </div>
     </div>
 
@@ -1211,28 +1210,28 @@
       <div class="dor-card">
         <div class="dor-icon"><i class="fas fa-random"></i></div>
         <h3>Conflito entre disciplinas</h3>
-        <p class="dor-quote">"A tubulação de água passou exatamente onde o eletricista já tinha passado o eletroduto."</p>
-        <div class="dor-cost"><i class="fas fa-exclamation-triangle"></i> Retrabalho de compatibilização: R$ 2.000–6.000</div>
-        <p class="dor-resolve"><i class="fas fa-check-circle"></i> BIM compatibilizado: arquitetura e elétrica no mesmo modelo</p>
+        <p class="dor-quote">"A tubula��o de �gua passou exatamente onde o eletricista j� tinha passado o eletroduto."</p>
+        <div class="dor-cost"><i class="fas fa-exclamation-triangle"></i> Impacto: interfer�ncias identificadas tarde</div>
+        <p class="dor-resolve"><i class="fas fa-check-circle"></i> BIM compatibilizado: arquitetura e el�trica no mesmo modelo</p>
       </div>
       <!-- Dor 5 -->
       <div class="dor-card">
         <div class="dor-icon"><i class="fas fa-clock"></i></div>
         <h3>Obra parada esperando projeto</h3>
-        <p class="dor-quote">"Fiquei 3 semanas esperando o projeto e a obra parou. Peão parado, caro."</p>
-        <div class="dor-cost"><i class="fas fa-exclamation-triangle"></i> Custo de obra parada: R$ 500–1.500/dia</div>
-        <p class="dor-resolve"><i class="fas fa-check-circle"></i> Entrega garantida em 48h. O mercado leva 2–3 semanas.</p>
+        <p class="dor-quote">"Fiquei 3 semanas esperando o projeto e a obra parou. Pe�o parado, caro."</p>
+        <div class="dor-cost"><i class="fas fa-exclamation-triangle"></i> Impacto: equipe aguardando defini��es</div>
+        <p class="dor-resolve"><i class="fas fa-check-circle"></i> Prazo e etapas definidos conforme o escopo de cada projeto</p>
       </div>
     </div>
 
     <div class="dores-highlight" data-aos="fade-up" data-aos-delay="200">
-      <p>Retrabalho elétrico custa em média <strong>R$ 4.500</strong>.<br>O projeto custa <strong>R$ 900</strong>. Faça as contas.</p>
-      <p class="sub">Enquanto outros entregam plantas, a GDA entrega certeza.</p>
+      <p>Decis�es t�cnicas bem documentadas ajudam a organizar a execu��o.</p>
+      <p class="sub">A GDA entrega projeto, documenta��o e comunica��o clara para a obra.</p>
     </div>
   </div>
 </section>
 
-<!-- ══ SOLUTION / COMO FUNCIONA ══ -->
+<!-- �� SOLUTION / COMO FUNCIONA �� -->
 <section class="section section-alt" id="solution">
   <div class="container">
     <div class="solution-grid">
@@ -1244,28 +1243,28 @@
             <div class="step-num">1</div>
             <div class="step-body">
               <h4>Briefing por WhatsApp</h4>
-              <p>Você nos conta o projeto: área, cômodos, padrão. Sem reunião presencial obrigatória.</p>
+              <p>Voc� nos conta o projeto: �rea, c�modos, padr�o. Sem reuni�o presencial obrigat�ria.</p>
             </div>
           </div>
           <div class="step">
             <div class="step-num">2</div>
             <div class="step-body">
               <h4>Desenvolvimento BIM em Revit</h4>
-              <p>Projeto modelado em 3D com compatibilização de todas as disciplinas. Cada decisão documentada.</p>
+              <p>Projeto modelado em 3D com compatibiliza��o de todas as disciplinas. Cada decis�o documentada.</p>
             </div>
           </div>
           <div class="step">
             <div class="step-num">3</div>
             <div class="step-body">
-              <h4>Entrega do isométrico 3D</h4>
-              <p>Cada ambiente com sua vista isométrica. O profissional que vai executar entende sem precisar ligar.</p>
+              <h4>Entrega do isom�trico 3D</h4>
+              <p>Cada ambiente com sua vista isom�trica. O profissional que vai executar entende sem precisar ligar.</p>
             </div>
           </div>
           <div class="step">
             <div class="step-num">4</div>
             <div class="step-body">
               <h4>Memorial + cronograma financeiro</h4>
-              <p>Relatório completo com lista de materiais, estimativa de custo e cronograma etapa por etapa.</p>
+              <p>Relat�rio completo com lista de materiais, estimativa de custo e cronograma etapa por etapa.</p>
             </div>
           </div>
         </div>
@@ -1274,18 +1273,18 @@
       <div data-aos="fade-left" data-aos-delay="100">
         <div class="solution-visual">
           <div class="solution-visual-icon"><i class="fas fa-drafting-compass"></i></div>
-          <h3>Metodologia BIM exclusiva</h3>
+          <h3>Processo de projeto em BIM</h3>
           <p>
-            Nossos projetos são desenvolvidos no Autodesk Revit com uma metodologia
-            que garante precisão técnica e velocidade de entrega.
-            O resultado é um projeto que o profissional de execução entende de verdade —
-            sem ligar pedindo esclarecimento, sem retrabalho, sem surpresa.
+            Nossos projetos s�o desenvolvidos no Autodesk Revit com uma metodologia
+            voltada � organiza��o das informa��es e � leitura t�cnica do projeto.
+            O resultado � um projeto que o profissional de execu��o entende de verdade -
+            com refer�ncias visuais e documenta��o para apoiar a execu��o.
           </p>
           <div class="solution-tags">
             <span class="solution-tag">Revit 2026</span>
-            <span class="solution-tag">BIM Nível 2</span>
+            <span class="solution-tag">BIM N�vel 2</span>
             <span class="solution-tag">NBR 5410</span>
-            <span class="solution-tag">Isométrico 3D</span>
+            <span class="solution-tag">Isom�trico 3D</span>
             <span class="solution-tag">Memorial descritivo</span>
             <span class="solution-tag">CREA-MG</span>
           </div>
@@ -1295,7 +1294,7 @@
   </div>
 </section>
 
-<!-- ══ PRODUTOS ══ -->
+<!-- �� PRODUTOS �� -->
 <section class="section" id="produtos">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
@@ -1307,44 +1306,44 @@
     <div class="produtos-grid">
       <!-- Card 1 -->
       <div class="prod-card" data-aos="fade-up" data-aos-delay="0">
-        <span class="prod-badge badge-acessivel">Mais acessível</span>
+        <span class="prod-badge badge-acessivel">Escopo por ambiente</span>
         <h3>Projeto de Ambiente</h3>
-        <p class="prod-desc">Um cômodo projetado com precisão total. Quarto, sala, cozinha, banheiro ou área de serviço.</p>
+        <p class="prod-desc">Escopo t�cnico para um c�modo: quarto, sala, cozinha, banheiro ou �rea de servi�o.</p>
         <ul class="prod-includes">
           <li><i class="fas fa-check"></i> Planta baixa do ambiente</li>
-          <li><i class="fas fa-check"></i> Isométrico 3D exclusivo</li>
+          <li><i class="fas fa-check"></i> Isom�trico 3D do ambiente</li>
           <li><i class="fas fa-check"></i> Lista de materiais</li>
           <li><i class="fas fa-check"></i> Memorial descritivo</li>
         </ul>
-        <p class="prod-prazo">Prazo: <strong>24 horas</strong></p>
+        <p class="prod-prazo">Prazo: <strong>definido ap�s an�lise do escopo</strong></p>
         <div class="prod-price">
-          <span class="prod-price-from">A partir de</span>
-          <span class="prod-price-val">R$ 197<span class="period"> / ambiente</span></span>
+          <span class="prod-price-from">Investimento</span>
+          <span class="prod-price-val">Sob or�amento</span>
         </div>
-        <a class="btn btn-outline" style="width:100%;justify-content:center" href="https://wa.me/5516997970166?text=Olá!%20Quero%20solicitar%20um%20Projeto%20de%20Ambiente.%20Pode%20me%20dar%20mais%20informações?" target="_blank">
+        <a class="btn btn-outline" style="width:100%;justify-content:center" href="https://wa.me/5516997970166?text=Ol�!%20Quero%20solicitar%20um%20Projeto%20de%20Ambiente.%20Pode%20me%20dar%20mais%20informa��es?" target="_blank">
           Solicitar ambiente <i class="fas fa-arrow-right"></i>
         </a>
       </div>
 
-      <!-- Card 2 — FEATURED -->
+      <!-- Card 2 - FEATURED -->
       <div class="prod-card featured" data-aos="fade-up" data-aos-delay="80">
-        <span class="prod-badge badge-popular">Mais popular</span>
-        <h3>Projeto Arquitetônico Pronto</h3>
-        <p class="prod-desc">Projeto completo de uma tipologia residencial padrão, pronto para usar. Arquivo editável incluso.</p>
+        <span class="prod-badge badge-popular">Tipologia dispon�vel</span>
+        <h3>Projeto Arquitet�nico Pronto</h3>
+        <p class="prod-desc">Projeto completo de uma tipologia residencial padr�o, pronto para usar. Arquivo edit�vel incluso.</p>
         <ul class="prod-includes">
           <li><i class="fas fa-check"></i> Planta baixa completa</li>
           <li><i class="fas fa-check"></i> Cortes e fachada</li>
           <li><i class="fas fa-check"></i> Compatibilizado e organizado</li>
-          <li><i class="fas fa-check"></i> Arquivo Revit editável incluso</li>
+          <li><i class="fas fa-check"></i> Arquivo Revit edit�vel incluso</li>
           <li><i class="fas fa-check"></i> Memorial descritivo completo</li>
         </ul>
-        <p class="prod-prazo">Prazo: <strong>5 dias úteis</strong></p>
+        <p class="prod-prazo">Prazo: <strong>confirmado conforme disponibilidade</strong></p>
         <div class="prod-price">
-          <span class="prod-price-from">A partir de</span>
-          <span class="prod-price-val">R$ 497<span class="period"> / projeto</span></span>
+          <span class="prod-price-from">Investimento</span>
+          <span class="prod-price-val">Sob consulta</span>
         </div>
-        <a class="btn btn-primary" style="width:100%;justify-content:center" href="https://wa.me/5516997970166?text=Olá!%20Tenho%20interesse%20nos%20Projetos%20Arquitetônicos%20Prontos.%20Pode%20me%20ajudar?" target="_blank">
-          Ver projetos disponíveis <i class="fas fa-arrow-right"></i>
+        <a class="btn btn-primary" style="width:100%;justify-content:center" href="https://wa.me/5516997970166?text=Ol�!%20Tenho%20interesse%20nos%20Projetos%20Arquitet�nicos%20Prontos.%20Pode%20me%20ajudar?" target="_blank">
+          Ver projetos dispon�veis <i class="fas fa-arrow-right"></i>
         </a>
       </div>
 
@@ -1352,76 +1351,67 @@
       <div class="prod-card" data-aos="fade-up" data-aos-delay="160">
         <span class="prod-badge badge-premium">Premium</span>
         <h3>Projeto Completo Personalizado</h3>
-        <p class="prod-desc">Projeto exclusivo para o seu terreno e programa de necessidades. Do briefing à ART.</p>
+        <p class="prod-desc">Projeto exclusivo para o seu terreno e programa de necessidades. Do briefing � ART.</p>
         <ul class="prod-includes">
-          <li><i class="fas fa-check"></i> Tudo do Arquitetônico Pronto</li>
+          <li><i class="fas fa-check"></i> Tudo do Arquitet�nico Pronto</li>
           <li><i class="fas fa-check"></i> Personalizado para seu terreno</li>
-          <li><i class="fas fa-check"></i> Reuniões de alinhamento inclusas</li>
-          <li><i class="fas fa-check"></i> Revisões ilimitadas</li>
-          <li><i class="fas fa-check"></i> ART inclusa</li>
+          <li><i class="fas fa-check"></i> Reuni�es de alinhamento inclusas</li>
+          <li><i class="fas fa-check"></i> Revis�es definidas no escopo contratado</li>
+          <li><i class="fas fa-check"></i> ART conforme atividade e proposta</li>
         </ul>
-        <p class="prod-prazo">Prazo: <strong>5 dias úteis</strong></p>
+        <p class="prod-prazo">Prazo: <strong>definido no or�amento</strong></p>
         <div class="prod-price">
-          <span class="prod-price-from">A partir de</span>
-          <span class="prod-price-val">R$ 1.500<span class="period"> / projeto</span></span>
+          <span class="prod-price-from">Investimento</span>
+          <span class="prod-price-val">Sob or�amento</span>
         </div>
-        <a class="btn btn-outline" style="width:100%;justify-content:center" href="https://wa.me/5516997970166?text=Olá!%20Quero%20solicitar%20um%20orçamento%20para%20Projeto%20Completo%20Personalizado." target="_blank">
-          Solicitar orçamento <i class="fas fa-arrow-right"></i>
+        <a class="btn btn-outline" style="width:100%;justify-content:center" href="https://wa.me/5516997970166?text=Ol�!%20Quero%20solicitar%20um%20or�amento%20para%20Projeto%20Completo%20Personalizado." target="_blank">
+          Solicitar or�amento <i class="fas fa-arrow-right"></i>
         </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ PRODUTOS DIGITAIS ══ -->
-<section class="section section-alt" id="digital">
+<!-- �� PROJETO VIVO �� -->
+<section class="section section-alt" id="projeto-vivo">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
-      <div class="eyebrow">Ferramentas digitais</div>
-      <h2 class="section-title">Ferramentas para sua obra</h2>
-      <p class="section-subtitle">Baixe agora e comece a planejar com mais inteligência.</p>
+      <div class="eyebrow">Em desenvolvimento</div>
+      <h2 class="section-title">Projeto Vivo</h2>
+      <p class="section-subtitle">Uma experi�ncia em desenvolvimento para apresentar o projeto de forma visual e facilitar a compreens�o das decis�es t�cnicas.</p>
     </div>
-
     <div class="digital-grid">
-      <!-- Checklist -->
-      <div class="digital-card" data-aos="fade-up" data-aos-delay="0">
-        <div class="digital-icon"><i class="fas fa-clipboard-check"></i></div>
-        <h3>Checklist Completo da Obra</h3>
-        <p class="dig-desc">8 etapas para fiscalizar cada fase da sua obra. Nunca mais seja surpreendido pela falta de um item.</p>
+      <div class="digital-card" data-aos="fade-up">
+        <div class="digital-icon"><i class="fas fa-eye"></i></div>
+        <h3>Demonstra��o ilustrativa</h3>
+        <p class="dig-desc">A pr�via mostra uma proposta de navega��o e visualiza��o. Os recursos exibidos ainda est�o em valida��o e n�o representam c�lculo, or�amento, economia ou simula��o 4D.</p>
         <ul class="digital-includes">
-          <li><i class="fas fa-check-circle"></i> 8 etapas detalhadas de fiscalização</li>
-          <li><i class="fas fa-check-circle"></i> Tabela de alturas conforme NBR 5410</li>
-          <li><i class="fas fa-check-circle"></i> O que conferir antes de tapar a parede</li>
-          <li><i class="fas fa-check-circle"></i> Perguntas certas para fazer ao profissional</li>
+          <li><i class="fas fa-check-circle"></i> Leitura visual do projeto</li>
+          <li><i class="fas fa-check-circle"></i> Organiza��o de informa��es t�cnicas</li>
+          <li><i class="fas fa-check-circle"></i> Evolu��o acompanhada durante o desenvolvimento</li>
         </ul>
-        <div class="digital-price">R$ 27</div>
-        <a class="btn btn-primary" href="[LINK_HOTMART_CHECKLIST]" target="_blank">
-          Baixar agora <i class="fas fa-download"></i>
+        <a class="btn btn-primary" href="https://wa.me/5516997970166?text=Ol�!%20Gostaria%20de%20conhecer%20o%20Projeto%20Vivo%20em%20desenvolvimento." target="_blank">
+          Acompanhar o desenvolvimento <i class="fas fa-arrow-right"></i>
         </a>
       </div>
-
-      <!-- Relatório + Consulta -->
       <div class="digital-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="digital-icon"><i class="fas fa-file-alt"></i></div>
-        <h3>Relatório Completo + Consulta com Engenheiro</h3>
-        <p class="dig-desc">Receba o relatório detalhado da sua obra e tire todas as dúvidas em consulta exclusiva com engenheiro especializado.</p>
+        <div class="digital-icon"><i class="fas fa-hard-hat"></i></div>
+        <h3>Foco atual: servi�os de projeto</h3>
+        <p class="dig-desc">Enquanto o Projeto Vivo evolui, a GDA atende projetos arquitet�nicos e el�tricos em BIM, documenta��o e compatibiliza��o conforme o escopo contratado.</p>
         <ul class="digital-includes">
-          <li><i class="fas fa-check-circle"></i> Estimativa de custo por etapa</li>
-          <li><i class="fas fa-check-circle"></i> Lista de materiais estimada</li>
-          <li><i class="fas fa-check-circle"></i> Cronograma financeiro da obra</li>
-          <li><i class="fas fa-check-circle"></i> Links de fornecedores em JF</li>
-          <li><i class="fas fa-check-circle"></i> 30 min de consulta via WhatsApp</li>
+          <li><i class="fas fa-check-circle"></i> Escopo e prazo definidos em proposta</li>
+          <li><i class="fas fa-check-circle"></i> Entreg�veis alinhados antes do in�cio</li>
+          <li><i class="fas fa-check-circle"></i> Atendimento pelo WhatsApp</li>
         </ul>
-        <div class="digital-price">R$ 97</div>
-        <a class="btn btn-primary" href="https://wa.me/5516997970166?text=Olá!%20Quero%20contratar%20o%20Relatório%20Completo%20+%20Consulta%20com%20Engenheiro." target="_blank">
-          Quero meu relatório <i class="fas fa-arrow-right"></i>
+        <a class="btn btn-primary" href="https://wa.me/5516997970166?text=Ol�!%20Gostaria%20de%20solicitar%20um%20or�amento%20de%20projeto." target="_blank">
+          Solicitar or�amento <i class="fas fa-arrow-right"></i>
         </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ DIFERENCIAIS ══ -->
+<!-- �� DIFERENCIAIS �� -->
 <section class="section" id="diferenciais">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
@@ -1431,158 +1421,72 @@
     <div class="dif-grid">
       <div class="dif-card" data-aos="fade-up" data-aos-delay="0">
         <div class="dif-icon"><i class="fas fa-cube"></i></div>
-        <h3>Isométrico 3D por ambiente</h3>
-        <p>Cada cômodo entregue com vista isométrica em 3D. O profissional vê exatamente o que vai executar.</p>
+        <h3>Isom�trico 3D por ambiente</h3>
+        <p>Cada c�modo entregue com vista isom�trica em 3D. O profissional v� exatamente o que vai executar.</p>
       </div>
       <div class="dif-card" data-aos="fade-up" data-aos-delay="60">
         <div class="dif-icon"><i class="fas fa-bolt"></i></div>
-        <h3>48 horas. Garantido.</h3>
-        <p>Enquanto o mercado leva 2–3 semanas, entregamos em 48h. Sem atrasar sua obra um dia.</p>
+        <h3>Prazo alinhado ao escopo</h3>
+        <p>Cada proposta informa etapas, entreg�veis e prazo conforme a complexidade do projeto.</p>
       </div>
       <div class="dif-card" data-aos="fade-up" data-aos-delay="120">
         <div class="dif-icon"><i class="fas fa-shield-alt"></i></div>
-        <h3>NBR 5410 rigorosa</h3>
-        <p>Cada projeto segue a norma brasileira de instalações elétricas. Segurança técnica sem concessão.</p>
+        <h3>Refer�ncias t�cnicas aplic�veis</h3>
+        <p>O escopo considera as normas e os requisitos t�cnicos aplic�veis ao tipo de projeto.</p>
       </div>
       <div class="dif-card" data-aos="fade-up" data-aos-delay="0">
         <div class="dif-icon"><i class="fas fa-layer-group"></i></div>
         <h3>BIM compatibilizado</h3>
-        <p>Arquitetura e elétrica no mesmo modelo 3D. Sem conflitos, sem interferências, sem surpresa na obra.</p>
+        <p>Arquitetura e el�trica podem ser analisadas no mesmo modelo 3D para apoiar a identifica��o de interfer�ncias.</p>
       </div>
       <div class="dif-card" data-aos="fade-up" data-aos-delay="60">
         <div class="dif-icon"><i class="fas fa-file-invoice-dollar"></i></div>
         <h3>Cronograma financeiro</h3>
-        <p>Estimativa de custo etapa por etapa antes da obra começar. Você sabe quanto vai gastar antes de gastar.</p>
+        <p>Quantitativos e informa��es de projeto podem apoiar o planejamento, conforme os entreg�veis contratados.</p>
       </div>
       <div class="dif-card" data-aos="fade-up" data-aos-delay="120">
         <div class="dif-icon"><i class="fas fa-map-marker-alt"></i></div>
-        <h3>Referência em Juiz de Fora</h3>
-        <p>Expertise técnica local. Conhecemos fornecedores, profissionais e as particularidades das obras de JF.</p>
+        <h3>Refer�ncia em Juiz de Fora</h3>
+        <p>Atendimento local em Juiz de Fora e possibilidade de desenvolvimento remoto conforme o escopo.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ CALCULADORA ══ -->
-<section class="section section-alt" id="calculadora">
-  <div class="container">
-    <div class="calc-wrap">
-      <div class="calc-intro" data-aos="fade-right">
-        <div class="eyebrow">Estimativa rápida</div>
-        <h2 class="section-title">Quanto vai custar<br>a sua instalação?</h2>
-        <p class="section-subtitle" style="margin-bottom:32px">
-          Estime o investimento em mão de obra e materiais antes de contratar qualquer profissional.
-          Cronograma financeiro da sua instalação elétrica, etapa por etapa.
-        </p>
-        <p style="font-size:.875rem;color:var(--txt-3);line-height:1.65">
-          * Estimativa baseada em valores médios praticados em Juiz de Fora, MG.
-          Para orçamento detalhado, solicite o Relatório Completo + Consulta.
-        </p>
-      </div>
-
-      <div data-aos="fade-left" data-aos-delay="100">
-        <div class="calc-panel">
-          <div class="calc-field">
-            <div class="calc-label">
-              <span>Área total da residência</span>
-              <span class="calc-label-val" id="lbl-area">80 m²</span>
-            </div>
-            <input type="range" id="slider-area" min="30" max="500" value="80" step="5" oninput="calcUpdate()" />
-          </div>
-
-          <div class="calc-field">
-            <div class="calc-label">
-              <span>Número de cômodos</span>
-              <span class="calc-label-val" id="lbl-comodos">4</span>
-            </div>
-            <input type="range" id="slider-comodos" min="1" max="20" value="4" step="1" oninput="calcUpdate()" />
-          </div>
-
-          <div class="calc-field">
-            <div class="calc-label"><span>Padrão construtivo</span></div>
-            <div class="calc-radio-group">
-              <label class="calc-radio-label" id="lbl-simples">
-                <input type="radio" name="padrao" value="simples" onchange="calcUpdate()" />
-                Simples
-              </label>
-              <label class="calc-radio-label selected" id="lbl-medio">
-                <input type="radio" name="padrao" value="medio" onchange="calcUpdate()" checked />
-                Médio
-              </label>
-              <label class="calc-radio-label" id="lbl-alto">
-                <input type="radio" name="padrao" value="alto" onchange="calcUpdate()" />
-                Alto
-              </label>
-            </div>
-          </div>
-
-          <div class="calc-result">
-            <div class="calc-result-title">Estimativa de instalação elétrica</div>
-            <div class="calc-result-item main">
-              <span class="calc-result-item-label">Total estimado</span>
-              <span class="calc-result-item-val" id="res-total">R$ 7.200</span>
-            </div>
-            <div class="calc-result-item">
-              <span class="calc-result-item-label">Materiais (40%)</span>
-              <span class="calc-result-item-val" id="res-material">R$ 2.880</span>
-            </div>
-            <div class="calc-result-item">
-              <span class="calc-result-item-label">Mão de obra (60%)</span>
-              <span class="calc-result-item-val" id="res-mdo">R$ 4.320</span>
-            </div>
-            <div class="calc-result-item">
-              <span class="calc-result-item-label">Economia com projeto (15%)</span>
-              <span class="calc-result-item-val" id="res-economia">R$ 1.080</span>
-            </div>
-          </div>
-          <p class="calc-disclaimer">Valores médios de Juiz de Fora/MG. Não incluem quadro de distribuição, aterramento ou automação. Solicite orçamento detalhado.</p>
-
-          <a class="btn btn-primary" style="width:100%;justify-content:center;margin-top:20px"
-             id="calc-cta"
-             href="https://wa.me/5516997970166?text=Olá!%20Quero%20contratar%20o%20Relatório%20Completo%20+%20Consulta%20com%20Engenheiro."
-             target="_blank">
-            Receber relatório completo + consulta <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ PORTFÓLIO ══ -->
+<!-- �� PORTF�LIO �� -->
 <section class="section" id="portfolio">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
       <div class="eyebrow">Nossos projetos</div>
-      <h2 class="section-title">Portfólio GDA</h2>
-      <p class="section-subtitle">Projetos reais desenvolvidos com metodologia BIM em Juiz de Fora e região.</p>
+      <h2 class="section-title">Portf�lio GDA</h2>
+      <p class="section-subtitle">Projetos reais desenvolvidos com metodologia BIM em Juiz de Fora e regi�o.</p>
     </div>
 
     <div class="portfolio-grid">
       <div class="portfolio-item" data-aos="fade-up" data-aos-delay="0" onclick="openLightbox(this)">
-        <img src="IMAGENS%20MARKETING/WhatsApp%20Image%202026-04-07%20at%2016.41.19.jpeg" alt="Projeto BIM GDA — Residencial" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'portfolio-placeholder\'><i class=\'fas fa-drafting-compass\'></i><p>Projeto BIM</p></div>'" />
+        <img src="IMAGENS%20MARKETING/WhatsApp%20Image%202026-04-07%20at%2016.41.19.jpeg" alt="Projeto BIM GDA - Residencial" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'portfolio-placeholder\'><i class=\'fas fa-drafting-compass\'></i><p>Projeto BIM</p></div>'" />
         <div class="portfolio-overlay">
           <div class="portfolio-overlay-text">
             <h4>Projeto Residencial</h4>
-            <p>Arquitetônico + Elétrico BIM</p>
+            <p>Arquitet�nico + El�trico BIM</p>
           </div>
         </div>
       </div>
       <div class="portfolio-item" data-aos="fade-up" data-aos-delay="60" onclick="openLightbox(this)">
-        <img src="IMAGENS%20MARKETING/WhatsApp%20Image%202026-04-07%20at%2016.41.19%20(1).jpeg" alt="Projeto elétrico isométrico 3D" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'portfolio-placeholder\'><i class=\'fas fa-bolt\'></i><p>Isométrico 3D</p></div>'" />
+        <img src="IMAGENS%20MARKETING/WhatsApp%20Image%202026-04-07%20at%2016.41.19%20(1).jpeg" alt="Projeto el�trico isom�trico 3D" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'portfolio-placeholder\'><i class=\'fas fa-bolt\'></i><p>Isom�trico 3D</p></div>'" />
         <div class="portfolio-overlay">
           <div class="portfolio-overlay-text">
-            <h4>Isométrico 3D</h4>
+            <h4>Isom�trico 3D</h4>
             <p>Vista por ambiente</p>
           </div>
         </div>
       </div>
       <div class="portfolio-item" data-aos="fade-up" data-aos-delay="120" onclick="openLightbox(this)">
-        <img src="IMAGENS%20MARKETING/WhatsApp%20Image%202026-04-07%20at%2016.41.19%20(2).jpeg" alt="Projeto arquitetônico BIM" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'portfolio-placeholder\'><i class=\'fas fa-home\'></i><p>Projeto Arquitetônico</p></div>'" />
+        <img src="IMAGENS%20MARKETING/WhatsApp%20Image%202026-04-07%20at%2016.41.19%20(2).jpeg" alt="Projeto arquitet�nico BIM" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'portfolio-placeholder\'><i class=\'fas fa-home\'></i><p>Projeto Arquitet�nico</p></div>'" />
         <div class="portfolio-overlay">
           <div class="portfolio-overlay-text">
-            <h4>Projeto Arquitetônico</h4>
-            <p>BIM nível 2 — Revit</p>
+            <h4>Projeto Arquitet�nico</h4>
+            <p>BIM n�vel 2 - Revit</p>
           </div>
         </div>
       </div>
@@ -1591,7 +1495,7 @@
         <div class="portfolio-overlay">
           <div class="portfolio-overlay-text">
             <h4>Planta + Memorial</h4>
-            <p>Documentação completa</p>
+            <p>Documenta��o completa</p>
           </div>
         </div>
       </div>
@@ -1600,7 +1504,7 @@
         <div class="portfolio-overlay">
           <div class="portfolio-overlay-text">
             <h4>BIM Compatibilizado</h4>
-            <p>Arquitetura + Elétrica</p>
+            <p>Arquitetura + El�trica</p>
           </div>
         </div>
       </div>
@@ -1609,7 +1513,7 @@
         <div class="portfolio-overlay">
           <div class="portfolio-overlay-text">
             <h4>Render Fotorrealista</h4>
-            <p>Visualização 3D completa</p>
+            <p>Visualiza��o 3D completa</p>
           </div>
         </div>
       </div>
@@ -1623,50 +1527,44 @@
   <div id="lightbox-content"></div>
 </div>
 
-<!-- ══ DEPOIMENTOS ══ -->
+<!-- �� FORMAS DE COLABORA��O �� -->
 <section class="section section-alt" id="depoimentos">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
-      <div class="eyebrow">Quem já escolheu a GDA</div>
-      <h2 class="section-title">O que nossos parceiros dizem</h2>
+      <div class="eyebrow">Como a GDA colabora</div>
+      <h2 class="section-title">Informa��o para cada etapa</h2>
     </div>
     <div class="depo-grid">
       <div class="depo-card" data-aos="fade-up" data-aos-delay="0">
-        <div class="depo-stars">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        </div>
-        <p class="depo-text">"A GDA entregou o projeto elétrico compatibilizado com nossa arquitetura em menos de 48h. O isométrico 3D foi decisivo para a execução sem erros. Nossos clientes adoraram o nível de detalhe."</p>
+        <div class="depo-stars"><i class="fas fa-pen-ruler"></i></div>
+        <p class="depo-text">Projeto desenvolvido a partir do briefing, das refer�ncias dispon�veis e do escopo confirmado com o cliente.</p>
         <div class="depo-footer">
-          <div class="depo-avatar">DN</div>
+          <div class="depo-avatar"><i class="fas fa-comments"></i></div>
           <div>
-            <div class="depo-name">DN Projetos</div>
-            <div class="depo-role">Escritório de Arquitetura</div>
+            <div class="depo-name">Alinhamento</div>
+            <div class="depo-role">Premissas e entreg�veis</div>
           </div>
         </div>
       </div>
       <div class="depo-card" data-aos="fade-up" data-aos-delay="80">
-        <div class="depo-stars">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        </div>
-        <p class="depo-text">"Parceria que transformou nossa entrega para clientes. Projeto elétrico BIM junto com o arquitetônico, clientes mais satisfeitos e obra sem retrabalho. Recomendo sem hesitar."</p>
+        <div class="depo-stars"><i class="fas fa-cube"></i></div>
+        <p class="depo-text">Modelagem e documenta��o organizadas para facilitar a leitura das solu��es e a coordena��o entre disciplinas.</p>
         <div class="depo-footer">
-          <div class="depo-avatar">PA</div>
+          <div class="depo-avatar"><i class="fas fa-layer-group"></i></div>
           <div>
-            <div class="depo-name">Pro Arq</div>
-            <div class="depo-role">Arquitetura e Projetos</div>
+            <div class="depo-name">Compatibiliza��o</div>
+            <div class="depo-role">Coordena��o de informa��es</div>
           </div>
         </div>
       </div>
       <div class="depo-card" data-aos="fade-up" data-aos-delay="160">
-        <div class="depo-stars">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        </div>
-        <p class="depo-text">"Precisão técnica e agilidade que não encontrávamos no mercado de JF. O cronograma financeiro junto com o projeto mudou completamente nossa gestão de obra. Ganho real de previsibilidade."</p>
+        <div class="depo-stars"><i class="fas fa-file-alt"></i></div>
+        <p class="depo-text">Pranchas, vistas e memoriais conforme o escopo, com informa��es destinadas a apoiar o planejamento e a execu��o.</p>
         <div class="depo-footer">
-          <div class="depo-avatar">RN</div>
+          <div class="depo-avatar"><i class="fas fa-hard-hat"></i></div>
           <div>
-            <div class="depo-name">RN Engenharia</div>
-            <div class="depo-role">Engenharia e Construção</div>
+            <div class="depo-name">Documenta��o</div>
+            <div class="depo-role">Informa��o t�cnica para a obra</div>
           </div>
         </div>
       </div>
@@ -1674,7 +1572,7 @@
   </div>
 </section>
 
-<!-- ══ PARCERIAS ══ -->
+<!-- �� PARCERIAS �� -->
 <section class="section" id="parcerias">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
@@ -1691,13 +1589,13 @@
         <div class="parceria-icon"><i class="fas fa-pen-ruler"></i></div>
         <h3>Arquiteto Parceiro</h3>
         <ul class="parceria-benefits">
-          <li><i class="fas fa-check"></i> Entrega garantida em 48h para o seu cliente</li>
+          <li><i class="fas fa-check"></i> Prazo e entreg�veis definidos por projeto</li>
           <li><i class="fas fa-check"></i> BIM compatibilizado com sua arquitetura</li>
-          <li><i class="fas fa-check"></i> Projetos recorrentes com condições especiais</li>
-          <li><i class="fas fa-check"></i> Suporte técnico durante a execução da obra</li>
-          <li><i class="fas fa-check"></i> Seu cliente recebe isométrico 3D exclusivo</li>
+          <li><i class="fas fa-check"></i> Projetos recorrentes com condi��es especiais</li>
+          <li><i class="fas fa-check"></i> Suporte t�cnico durante a execu��o da obra</li>
+          <li><i class="fas fa-check"></i> Isom�trico 3D conforme os entreg�veis contratados</li>
         </ul>
-        <p class="parceria-frase">"Você projeta. A GDA complementa. Seu cliente recebe o melhor dos dois."</p>
+        <p class="parceria-frase">"Voc� projeta. A GDA complementa. Seu cliente recebe o melhor dos dois."</p>
       </div>
 
       <!-- Construtora -->
@@ -1705,49 +1603,49 @@
         <div class="parceria-icon"><i class="fas fa-hard-hat"></i></div>
         <h3>Construtora Parceira</h3>
         <ul class="parceria-benefits">
-          <li><i class="fas fa-check"></i> Volume de obras com condições progressivas</li>
+          <li><i class="fas fa-check"></i> Volume de obras com condi��es progressivas</li>
           <li><i class="fas fa-check"></i> Cronograma integrado ao ritmo da sua obra</li>
-          <li><i class="fas fa-check"></i> Compatibilização entre todas as disciplinas</li>
-          <li><i class="fas fa-check"></i> Suporte WhatsApp durante a execução</li>
-          <li><i class="fas fa-check"></i> Redução de conflitos e interferências entre equipes</li>
+          <li><i class="fas fa-check"></i> Compatibiliza��o entre todas as disciplinas</li>
+          <li><i class="fas fa-check"></i> Suporte WhatsApp durante a execu��o</li>
+          <li><i class="fas fa-check"></i> Redu��o de conflitos e interfer�ncias entre equipes</li>
         </ul>
-        <p class="parceria-frase">"Menos interferência na obra. Mais previsibilidade no orçamento."</p>
+        <p class="parceria-frase">"Informa��es coordenadas para apoiar decis�es antes da execu��o."</p>
       </div>
     </div>
 
     <div class="parcerias-cta" data-aos="fade-up">
       <a class="btn" style="background:#fff;color:var(--green-dark);font-size:1rem;padding:16px 36px;border-radius:980px"
-         href="https://wa.me/5516997970166?text=Olá!%20Tenho%20interesse%20no%20Programa%20de%20Parceiros%20GDA." target="_blank">
+         href="https://wa.me/5516997970166?text=Ol�!%20Tenho%20interesse%20no%20Programa%20de%20Parceiros%20GDA." target="_blank">
         <i class="fab fa-whatsapp"></i> Quero ser parceiro GDA
       </a>
     </div>
   </div>
 </section>
 
-<!-- ══ FAQ ══ -->
+<!-- �� FAQ �� -->
 <section class="section section-alt" id="faq">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
       <div class="eyebrow">Perguntas frequentes</div>
-      <h2 class="section-title">Tudo que você precisa saber</h2>
+      <h2 class="section-title">Tudo que voc� precisa saber</h2>
     </div>
     <div class="faq-list" data-aos="fade-up" data-aos-delay="100">
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
-          O prazo de 48h é realmente garantido?
+          Como � definido o prazo de entrega?
           <i class="fas fa-plus"></i>
         </button>
         <div class="faq-answer">
-          <p class="faq-answer-inner">Sim. Para projetos de até 250m² em padrão simples ou médio, entregamos em 48 horas úteis após aprovação do briefing e pagamento. Projetos maiores ou de alto padrão têm prazo comunicado no orçamento. Em caso de atraso por nossa parte, oferecemos desconto na próxima contratação.</p>
+          <p class="faq-answer-inner">O prazo � informado na proposta ap�s a an�lise da �rea, da complexidade, dos arquivos recebidos e dos entreg�veis solicitados.</p>
         </div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
-          O projeto elétrico já vem com ART?
+          O projeto el�trico j� vem com ART?
           <i class="fas fa-plus"></i>
         </button>
         <div class="faq-answer">
-          <p class="faq-answer-inner">A ART (Anotação de Responsabilidade Técnica) está inclusa nos projetos do plano Completo Personalizado. Para os demais planos, pode ser adicionada mediante valor adicional. Todos os projetos são assinados por engenheiro habilitado no CREA-MG.</p>
+          <p class="faq-answer-inner">A necessidade de ART (Anota��o de Responsabilidade T�cnica) depende da atividade e do escopo. Sua inclus�o � informada expressamente na proposta.</p>
         </div>
       </div>
       <div class="faq-item">
@@ -1756,52 +1654,52 @@
           <i class="fas fa-plus"></i>
         </button>
         <div class="faq-answer">
-          <p class="faq-answer-inner">Para o Projeto de Ambiente e o Projeto Completo Personalizado, precisamos das medidas do imóvel (planta baixa, croqui ou medidas tiradas pelo responsável da obra). Para o Projeto Arquitetônico Pronto, os projetos são de tipologias padrão e não exigem planta prévia.</p>
+          <p class="faq-answer-inner">Para o Projeto de Ambiente e o Projeto Completo Personalizado, precisamos das medidas do im�vel (planta baixa, croqui ou medidas tiradas pelo respons�vel da obra). Para o Projeto Arquitet�nico Pronto, os projetos s�o de tipologias padr�o e n�o exigem planta pr�via.</p>
         </div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
-          O isométrico 3D serve para quê na prática?
+          O isom�trico 3D serve para qu� na pr�tica?
           <i class="fas fa-plus"></i>
         </button>
         <div class="faq-answer">
-          <p class="faq-answer-inner">O isométrico 3D é a representação tridimensional de cada ambiente com o traçado elétrico visível. Ele elimina as dúvidas de execução: o profissional que vai executar a instalação consegue visualizar exatamente onde passam os circuitos, sem precisar interpretar a planta 2D. Resultado: menos ligações, menos retrabalho, mais agilidade.</p>
+          <p class="faq-answer-inner">O isom�trico 3D representa cada ambiente com o tra�ado el�trico vis�vel. Ele complementa as plantas e ajuda o profissional a compreender percursos e pontos previstos no projeto.</p>
         </div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
-          Atendem apenas Juiz de Fora ou também outras cidades?
+          Atendem apenas Juiz de Fora ou tamb�m outras cidades?
           <i class="fas fa-plus"></i>
         </button>
         <div class="faq-answer">
-          <p class="faq-answer-inner">Atendemos Juiz de Fora e toda a região. Como os projetos são desenvolvidos digitalmente e entregues por PDF e arquivo Revit, também atendemos clientes de outras cidades de Minas Gerais e do Brasil inteiro via WhatsApp.</p>
+          <p class="faq-answer-inner">Atendemos Juiz de Fora e toda a regi�o. Como os projetos s�o desenvolvidos digitalmente e entregues por PDF e arquivo Revit, tamb�m atendemos clientes de outras cidades de Minas Gerais e do Brasil inteiro via WhatsApp.</p>
         </div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
-          Qual é a forma de pagamento?
+          Qual � a forma de pagamento?
           <i class="fas fa-plus"></i>
         </button>
         <div class="faq-answer">
-          <p class="faq-answer-inner">Aceitamos PIX, transferência bancária e cartão de crédito (parcelamento disponível). O pagamento é realizado antes do início do desenvolvimento. Para parceiros com volume recorrente, temos condições diferenciadas — entre em contato pelo WhatsApp.</p>
+          <p class="faq-answer-inner">Aceitamos PIX, transfer�ncia banc�ria e cart�o de cr�dito (parcelamento dispon�vel). O pagamento � realizado antes do in�cio do desenvolvimento. Para parceiros com volume recorrente, temos condi��es diferenciadas - entre em contato pelo WhatsApp.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ CTA FINAL ══ -->
+<!-- �� CTA FINAL �� -->
 <section class="section" id="cta-final">
   <div class="container">
     <div class="cta-final-inner">
       <div class="cta-final-text" data-aos="fade-right">
         <h2>Pronto para ter sua obra<br>do jeito certo?</h2>
         <p>
-          Fale com nosso engenheiro agora pelo WhatsApp. Resposta em até 2 horas.
-          Sem compromisso, sem burocracia.
+          Fale com a GDA pelo WhatsApp para apresentar seu projeto.
+          O retorno acontece conforme a disponibilidade de atendimento.
         </p>
         <a class="btn" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3);margin-top:24px;border-radius:980px"
-           href="https://wa.me/5516997970166?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20meu%20projeto." target="_blank">
+           href="https://wa.me/5516997970166?text=Ol�!%20Gostaria%20de%20solicitar%20um%20or�amento%20para%20meu%20projeto." target="_blank">
           <i class="fab fa-whatsapp"></i> Iniciar conversa no WhatsApp
         </a>
       </div>
@@ -1812,7 +1710,7 @@
             <div class="form-row">
               <div class="form-field">
                 <label for="inp-nome">Seu nome</label>
-                <input type="text" id="inp-nome" placeholder="Ex: João Silva" required />
+                <input type="text" id="inp-nome" placeholder="Ex: Jo�o Silva" required />
               </div>
               <div class="form-field">
                 <label for="inp-whats">WhatsApp</label>
@@ -1821,7 +1719,7 @@
             </div>
             <div class="form-row">
               <div class="form-field">
-                <label for="inp-area-form">Área (m²)</label>
+                <label for="inp-area-form">�rea (m�)</label>
                 <input type="number" id="inp-area-form" placeholder="Ex: 120" min="1" />
               </div>
               <div class="form-field">
@@ -1829,7 +1727,7 @@
                 <select id="inp-tipo">
                   <option value="">Selecione</option>
                   <option value="ambiente">Projeto de Ambiente</option>
-                  <option value="arq-pronto">Arquitetônico Pronto</option>
+                  <option value="arq-pronto">Arquitet�nico Pronto</option>
                   <option value="completo">Completo Personalizado</option>
                   <option value="digital">Ferramentas digitais</option>
                   <option value="parceria">Parceria profissional</option>
@@ -1846,21 +1744,18 @@
   </div>
 </section>
 
-<!-- ══ FOOTER ══ -->
+<!-- �� FOOTER �� -->
 <footer>
   <div class="container">
     <div class="footer-grid">
       <div>
         <div class="footer-brand-logo">GDA<span class="dot">.</span></div>
         <p class="footer-brand-desc">
-          Engenharia digital especializada em projetos arquitetônicos e elétricos BIM.
-          Metodologia exclusiva, entrega em 48h, isométrico 3D por ambiente.
+          Engenharia digital especializada em projetos arquitet�nicos e el�tricos BIM.
+          Modelagem BIM, documenta��o t�cnica e visualiza��o 3D por ambiente.
           Juiz de Fora, MG.
         </p>
         <div class="footer-socials">
-          <a href="#" class="footer-social-link" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="footer-social-link" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="footer-social-link" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
           <a href="https://wa.me/5516997970166" class="footer-social-link" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
@@ -1868,10 +1763,9 @@
         <h4>Projetos</h4>
         <div class="footer-links">
           <a href="#produtos">Projeto de Ambiente</a>
-          <a href="#produtos">Arquitetônico Pronto</a>
+          <a href="#produtos">Arquitet�nico Pronto</a>
           <a href="#produtos">Completo Personalizado</a>
-          <a href="#digital">Checklist da Obra</a>
-          <a href="#digital">Relatório + Consulta</a>
+          <a href="#projeto-vivo">Projeto Vivo</a>
         </div>
       </div>
       <div>
@@ -1880,7 +1774,7 @@
           <a href="#solution">Como funciona</a>
           <a href="#diferenciais">Diferenciais</a>
           <a href="#parcerias">Seja parceiro</a>
-          <a href="#depoimentos">Depoimentos</a>
+          <a href="#depoimentos">Como colaboramos</a>
           <a href="#faq">FAQ</a>
         </div>
       </div>
@@ -1889,29 +1783,29 @@
         <div class="footer-links">
           <a href="https://wa.me/5516997970166" target="_blank"><i class="fab fa-whatsapp"></i> (16) 9 97970166</a>
           <a href="mailto:giliardataide28@gmail.com"><i class="fas fa-envelope"></i> giliardataide28@gmail.com</a>
-          <a href="#"><i class="fas fa-map-marker-alt"></i> Juiz de Fora, MG</a>
+          <span><i class="fas fa-map-marker-alt"></i> Juiz de Fora, MG</span>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 GDA Engenharia Digital. Todos os direitos reservados.</p>
-      <p class="footer-crea">Engenheiro responsável: Giliard Dourado Ataíde · CREA-MG [NÚMERO_CREA]</p>
+      <p class="footer-crea">Respons�vel t�cnico: Giliard Dourado Ata�de � atua��o em engenharia</p>
     </div>
   </div>
 </footer>
 
-<!-- ══ WHATSAPP FLOAT ══ -->
+<!-- �� WHATSAPP FLOAT �� -->
 <div id="whatsapp-float">
-  <a class="wa-float-btn" href="https://wa.me/5516997970166?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20projeto." target="_blank">
+  <a class="wa-float-btn" href="https://wa.me/5516997970166?text=Ol�!%20Gostaria%20de%20solicitar%20um%20or�amento%20de%20projeto." target="_blank">
     <i class="fab fa-whatsapp"></i>
     <span>Falar com engenheiro</span>
   </a>
 </div>
 
-<!-- ══ SCRIPTS ══ -->
+<!-- �� SCRIPTS �� -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-/* ── FAVICON DINÂMICO ── */
+/* �� FAVICON DIN�MICO �� */
 (function(){
   const c = document.getElementById('fav-canvas');
   const x = c.getContext('2d');
@@ -1923,7 +1817,7 @@
   document.head.appendChild(link);
 })();
 
-/* ── LOADING SCREEN ── */
+/* �� LOADING SCREEN �� */
 (function(){
   let pct = 0;
   const el = document.getElementById('loading-pct');
@@ -1938,7 +1832,7 @@
   window.addEventListener('load', ()=>{ pct = 100; setTimeout(hideLoading, 400); });
 })();
 
-/* ── SCROLL PROGRESS ── */
+/* �� SCROLL PROGRESS �� */
 window.addEventListener('scroll', ()=>{
   const el = document.getElementById('scroll-progress');
   const doc = document.documentElement;
@@ -1947,13 +1841,13 @@ window.addEventListener('scroll', ()=>{
   document.getElementById('navbar').classList.toggle('scrolled', doc.scrollTop > 40);
 });
 
-/* ── MOBILE MENU ── */
+/* �� MOBILE MENU �� */
 function toggleMobile(){
   document.getElementById('hamburger').classList.toggle('active');
   document.getElementById('mobile-menu').classList.toggle('open');
 }
 
-/* ── COUNTERS ── */
+/* �� COUNTERS �� */
 function animateCounters(){
   document.querySelectorAll('.cnt[data-target]').forEach(el=>{
     const target = parseInt(el.getAttribute('data-target'));
@@ -1977,41 +1871,7 @@ const counterObserver = new IntersectionObserver((entries)=>{
 const statsEl = document.getElementById('stats');
 if(statsEl) counterObserver.observe(statsEl);
 
-/* ── CALCULADORA ── */
-function fmt(n){ return 'R$ ' + n.toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
-function calcUpdate(){
-  const area = parseInt(document.getElementById('slider-area').value);
-  const comodos = parseInt(document.getElementById('slider-comodos').value);
-  const pad = document.querySelector('input[name=padrao]:checked').value;
-
-  document.getElementById('lbl-area').textContent = area + ' m²';
-  document.getElementById('lbl-comodos').textContent = comodos;
-
-  // Update radio label styles
-  document.querySelectorAll('.calc-radio-label').forEach(l => l.classList.remove('selected'));
-  document.getElementById('lbl-' + pad).classList.add('selected');
-
-  const rate = {simples:65, medio:90, alto:130}[pad];
-  const total = area * rate;
-  const mat = Math.round(total * .4);
-  const mdo = Math.round(total * .6);
-  const eco = Math.round(total * .15);
-
-  document.getElementById('res-total').textContent = fmt(total);
-  document.getElementById('res-material').textContent = fmt(mat);
-  document.getElementById('res-mdo').textContent = fmt(mdo);
-  document.getElementById('res-economia').textContent = fmt(eco);
-
-  // Update CTA link with calc values
-  const msg = encodeURIComponent(`Olá! Quero contratar o Relatório Completo + Consulta com Engenheiro. Minha obra tem ${area}m², ${comodos} cômodos, padrão ${pad}.`);
-  document.getElementById('calc-cta').href = `https://wa.me/5516997970166?text=${msg}`;
-}
-document.querySelectorAll('.calc-radio-label').forEach(label=>{
-  label.addEventListener('click', ()=>{ calcUpdate(); });
-});
-calcUpdate();
-
-/* ── FAQ ── */
+/* �� FAQ �� */
 function toggleFaq(btn){
   const answer = btn.nextElementSibling;
   const isOpen = btn.classList.contains('open');
@@ -2022,7 +1882,7 @@ function toggleFaq(btn){
   if(!isOpen){ btn.classList.add('open'); answer.classList.add('open'); }
 }
 
-/* ── LIGHTBOX ── */
+/* �� LIGHTBOX �� */
 function openLightbox(item){
   const img = item.querySelector('img');
   if(!img) return;
@@ -2043,7 +1903,7 @@ function closeLightbox(){
 }
 document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeLightbox(); });
 
-/* ── CONTACT FORM → WHATSAPP ── */
+/* �� CONTACT FORM  WHATSAPP �� */
 function submitForm(e){
   e.preventDefault();
   const nome  = document.getElementById('inp-nome').value.trim();
@@ -2053,19 +1913,19 @@ function submitForm(e){
   if(!nome || !whats){ alert('Por favor, preencha seu nome e WhatsApp.'); return; }
   const tipoLabel = {
     ambiente: 'Projeto de Ambiente',
-    'arq-pronto': 'Arquitetônico Pronto',
+    'arq-pronto': 'Arquitet�nico Pronto',
     completo: 'Completo Personalizado',
     digital: 'Ferramentas Digitais',
     parceria: 'Parceria Profissional'
   }[tipo] || tipo;
-  let msg = `Olá! Me chamo ${nome} e gostaria de solicitar um orçamento.`;
-  if(area) msg += ` Área: ${area}m².`;
+  let msg = `Ol�! Me chamo ${nome} e gostaria de solicitar um or�amento.`;
+  if(area) msg += ` �rea: ${area}m�.`;
   if(tipo) msg += ` Interesse: ${tipoLabel}.`;
   msg += ` WhatsApp para contato: ${whats}.`;
   window.open(`https://wa.me/5516997970166?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
-/* ── HERO VIDEO SWITCHER ── */
+/* �� HERO VIDEO SWITCHER �� */
 const heroSources = [
   'IMAGENS%20MARKETING/Blueprint_to_reality_202604072004.mp4',
   'IMAGENS%20MARKETING/Project_sketch_draw_202604071958.mp4'
@@ -2081,7 +1941,7 @@ function switchHeroVideo(index, thumbEl){
   mainVideo.play().catch(()=>{});
 }
 
-/* ── AOS INIT ── */
+/* �� AOS INIT �� */
 AOS.init({ duration: 700, once: true, offset: 60 });
 </script>
 </body>

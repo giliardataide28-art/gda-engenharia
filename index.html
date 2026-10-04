@@ -92,7 +92,12 @@
 <div class="section-head"><div><div class="eyebrow">GDA Projeto Vivo</div><h2>Do modelo à<br><em>informação rastreável.</em></h2></div><p>Uma frente de desenvolvimento para reunir modelos, informações e registros de revisão em uma interface de trabalho.</p></div>
 <div class="case-stage has-video">
 <div class="case-media has-video" id="case-media">
-<div class="case-placeholder" role="img" aria-label="Demonstração ilustrativa do Projeto Vivo em desenvolvimento"><span aria-hidden="true">◇</span><b>Projeto Vivo em desenvolvimento</b><small>Demonstração ilustrativa da integração entre disciplinas. Não representa cálculo, quantitativos aprovados, cronograma executivo ou liberação para obra.</small></div>
+<video class="case-video" id="projeto-vivo-video" width="1920" height="1080" controls playsinline preload="metadata" aria-label="Projeto Vivo: montagem multidisciplinar, versão clara" aria-describedby="projeto-vivo-caption projeto-vivo-nota">
+<source src="assets/projeto-vivo/projeto-vivo-claro-36s.mp4" type="video/mp4">
+Seu navegador não reproduz este vídeo. <a href="assets/projeto-vivo/projeto-vivo-claro-36s.mp4">Abrir o vídeo MP4</a>.
+</video>
+<p class="video-caption" id="projeto-vivo-caption"><span>Montagem multidisciplinar · 36 segundos · Sem áudio · Demonstração ilustrativa</span><a href="assets/projeto-vivo/projeto-vivo-claro-36s.mp4" download>Baixar vídeo MP4</a></p>
+<p class="video-error" id="projeto-vivo-error" role="status" hidden>Não foi possível carregar o vídeo. Tente novamente ou use o link para abrir o arquivo MP4.</p>
 </div>
 <div class="case-copy video-copy"><div><span class="tag">Piloto em validação</span><h3>Uma visão para<br>conferir e decidir.</h3></div><div><p>Estrutura, armaduras, hidráulica e elétrica aparecem em uma sequência visual construída a partir da geometria dos modelos de origem.</p><p>As cores e a montagem ajudam a ler as disciplinas. A sequência é ilustrativa e não representa um cronograma executivo.</p><p class="small" id="projeto-vivo-nota">A demonstração visual não comprova cálculo validado, quantitativos aprovados, cronograma de obra ou liberação para execução.</p><a class="btn secondary" href="https://wa.me/5516997970166?text=Ol%C3%A1%2C%20GDA!%20Gostaria%20de%20avaliar%20uma%20demanda%20de%20projeto." target="_blank" rel="noopener noreferrer">Conversar sobre um recorte <span aria-hidden="true">↗</span></a>
 <details class="video-description"><summary>Descrição do vídeo</summary><ol><li><b>0 a 10 s:</b> montagem visual da estrutura, com sapatas, vigas de fundação, pilares, vigas e lajes.</li><li><b>10 a 14 s:</b> concreto em transparência para visualizar as armaduras.</li><li><b>14 a 23 s:</b> entrada da hidráulica, com detalhe do reservatório e das ligações.</li><li><b>23 a 32 s:</b> entrada da elétrica, com detalhe do quadro e das rotas do modelo.</li><li><b>32 a 36 s:</b> leitura do conjunto das disciplinas. As contagens exibidas descrevem o modelo apresentado e não são quantitativos aprovados.</li></ol></details>
@@ -126,6 +131,12 @@ const tabs=$$('[data-tab]');
 function selectTab(tab){tabs.forEach(t=>{const yes=t===tab;t.setAttribute('aria-selected',String(yes));t.tabIndex=yes?0:-1;$('#panel-'+t.dataset.tab).hidden=!yes;$('#board-'+t.dataset.tab).hidden=!yes;});}
 tabs.forEach((t,i)=>{t.addEventListener('click',()=>selectTab(t));t.addEventListener('keydown',e=>{let n=i;if(e.key==='ArrowRight')n=(i+1)%tabs.length;else if(e.key==='ArrowLeft')n=(i+tabs.length-1)%tabs.length;else if(e.key==='Home')n=0;else if(e.key==='End')n=tabs.length-1;else return;e.preventDefault();selectTab(tabs[n]);tabs[n].focus();});});
 const privacy=$('#privacy-dialog');$('#privacy-open').addEventListener('click',()=>privacy.showModal());$('#privacy-close').addEventListener('click',()=>privacy.close());
+
+const projectVideo=$('#projeto-vivo-video');
+const showVideoError=()=>{$('#projeto-vivo-error').hidden=false;};
+projectVideo.addEventListener('error',showVideoError);
+projectVideo.querySelector('source').addEventListener('error',showVideoError);
+projectVideo.addEventListener('loadedmetadata',()=>{$('#projeto-vivo-error').hidden=true;});
 
 </script>
 </body>
